@@ -8,8 +8,9 @@ public class PersonaManager {
 	private ServicioPersona serv;
 	
 	public PersonaManager(){
-		ServicioPersonaBDD servPersBDD = new ServicioPersonaBDD();
-		this.serv = servPersBDD;
+		//ServicioPersonaBDD servPersBDD = new ServicioPersonaBDD();
+		ServicioPersonaArchivos servPersArch = new ServicioPersonaArchivos();
+		this.serv = servPersArch;
 	}
 	
 	public void insertarPersona(Persona persona){
